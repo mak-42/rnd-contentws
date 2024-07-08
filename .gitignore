@@ -1,0 +1,5 @@
+.soapui/
+.vscode/
+requests/resp*.*
+target/
+*.code-workspace

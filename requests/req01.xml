@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mak="http://mak.rnd.contentws/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <mak:LoadContentRequest>
+         <mak:AttachmentId>123</mak:AttachmentId>
+      </mak:LoadContentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

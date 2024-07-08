@@ -1,0 +1,21 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+        attributeFormDefault="unqualified" elementFormDefault="qualified"
+        targetNamespace="http://mak.rnd.contentws/">
+    <element name="LoadContentRequest">
+        <complexType>
+            <sequence>
+                <element name="AttachmentId" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="LoadContentResponse">
+        <complexType>
+            <sequence>
+                <element name="AttachmentId" type="string"/>
+                <element name="Filename" type="string"/>
+                <element name="Content" type="base64Binary"
+                            xmime:expectedContentTypes="application/octet-stream"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
